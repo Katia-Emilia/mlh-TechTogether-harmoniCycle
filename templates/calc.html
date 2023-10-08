@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menstrual Cycle Calculator</title>
+    <link href="../styles/index.css" rel="stylesheet">
+</head>
+<header>
+    <h1>HARMONI CYCLE</h1>
+</header>
+
+
+<body>
+    <div class="calc">
+    <h2><u>Menstrual Cycle Calculator</u></h2>
+    <div >
+    <label for="lastPeriodDate">Date of Last Period:</label>
+    <input type="date" id="lastPeriodDate" required>
+    <br><br>
+    <label for="menstruationDuration">Duration of Menstruation (in days):</label>
+    <input type="number" id="menstruationDuration">
+    <br><br>
+    <label for="follicularDuration">Duration of Follicular Phase (in days):</label>
+    <input type="number" id="follicularDuration">
+    <br><br>
+    <label for="ovulationDuration">Duration of Ovulation (in days):</label>
+    <input type="number" id="ovulationDuration">
+    <br><br>
+    <label for="lutealDuration">Duration of Luteal Phase (in days):</label>
+    <input type="number" id="lutealDuration">
+    <br><br>
+    <button onclick="calculateCycle()">Calculate</button>
+    <div>
+        <h2><u>Menstrual Cycle Dates:</u></h2>
+        <p>Menstruation: <span id="menstruationDate"></span></p>
+        <p>Follicular Phase: <span id="follicularDate"></span></p>
+        <p>Ovulation: <span id="ovulationDate"></span></p>
+        <p>Luteal Phase: <span id="lutealDate"></span></p>
+        <p>Next Menstruation: <span id="newMenstruationDate"></span></p>
+    </div> 
+</div>
+</div>
+    <script src="../script.js">
+    </script>
+</body>
+<footer>
+    <strong>TechTogether 2023</strong>
+</footer>
+</html>
